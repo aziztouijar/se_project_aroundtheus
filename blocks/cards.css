@@ -6,8 +6,18 @@
 .cards__list {
   display: grid;
   justify-content: center;
-  margin: 0;
+  margin: 36px 0 0;
   padding: 0;
   grid-template-columns: repeat(auto-fit, 282px);
   grid-gap: 20px 17px;
+}
+
+@media screen and (max-width: 620px) {
+  .cards {
+    margin-top: 36px;
+  }
+
+  .cards__list {
+    grid-gap: 20px 19px;
+  }
 }
