@@ -127,6 +127,9 @@
 }
 
 @media screen and (max-width: 320px) {
+  .profile {
+    margin-bottom: 20px;
+  }
   .profile__info {
     position: relative;
   }
