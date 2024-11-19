@@ -25,4 +25,29 @@ const initialCards = [
   },
 ];
 
-console.log(initialCards);
+const profileEditModal = document.querySelector("#profile-edit-modal");
+
+const profileEditForm = profileEditModal.querySelector(".modal__form");
+
+const profileEditBtn = document.querySelector("#profile-edit-button");
+
+const profileModalCloseBtn = profileEditModal.querySelector(".modal__close");
+
+const addCardModalCloseBtn = addCardModal.querySelector(".modal__close");
+
+function closePopup(modal) {
+  modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEscape);
+}
+
+function openPopup(modal) {
+  modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEscape);
+}
+
+function handleEscape(evt) {
+  if (evt.key === "Escape") {
+    const modalOpened = document.querySelector(".modal_opened");
+    closePopup(modalOpened);
+  }
+}
