@@ -1,4 +1,4 @@
-Project 3: Around The U.S.
+Project 4: Around The U.S.
 
 GitHub Pages link: https://aziztouijar.github.io/se_project_aroundtheus/
 
