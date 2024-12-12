@@ -2,98 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0"
-    />
-    <meta name="description" content="Dylan Shangold Around the US" />
-    <meta name="author" content="Dylan Shangold" />
-    <meta name="keywords" content="HTML, css" />
-    <title>Around The U.S.</title>
-    <link href="./pages/index.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Around The U.S</title>
+    <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
     <div class="page__content">
       <header class="header page__section">
         <img
           class="header__image"
-          src="./images/logo.svg"
-          alt="Around the U.S."
+          src="./images/Logo.svg"
+          alt="Around The U.S logo"
         />
       </header>
       <main class="content">
         <section class="profile page__section">
-          <img src="./images/Avatar.png" alt="Avatar" class="profile__image" />
+          <img
+            src="./images/jacques-cousteau.jpg"
+            alt=" Jacques Cousteau pic"
+            class="profile__image"
+          />
           <div class="profile__info">
-            <h1 class="profile__title" id="profile-title">Jacques Costeau</h1>
+            <h1 id="profile__title" class="profile__title">Jacques Cousteau</h1>
             <button
-              class="profile__edit-button"
-              id="profile-edit-button"
               type="button"
+              id="profile__edit-button"
+              class="profile__edit-button"
             ></button>
-            <p class="profile__description" id="profile-description">
+            <p id="profile__description" class="profile__description">
               Explorer
             </p>
           </div>
-          <button class="profile__add-button" type="button"></button>
+          <button type="button" class="profile__add-button"></button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list"></ul>
         </section>
       </main>
       <footer class="footer page__section">
-        <p class="footer__copyright">&copy; 2024 Around The U.S.</p>
+        <p class="footer__copyright">© 2022 Around The U.S.</p>
       </footer>
     </div>
-
-    <!-- Edit Modal -->
-
-    <div class="modal" id="profile-edit-modal">
+    <div id="profile__edit-modal" class="modal">
       <div class="modal__container">
         <button
-          class="modal__close"
-          id="profile-close-button"
           type="button"
+          class="modal__close"
+          id="modal__close-button"
         ></button>
         <p class="modal__heading">Edit Profile</p>
         <form class="modal__form">
-          <label class="modal__label">
-            <input
-              type="text"
-              class="modal__input"
-              name="title"
-              id="profile-title-input"
-              placeholder="Jacques Costeau"
-              minlength="2"
-              maxlength="40"
-              required
-            />
-          </label>
-          <label class="modal__label">
-            <input
-              type="text"
-              class="modal__input"
-              name="description"
-              id="profile-description-input"
-              placeholder="Explorer"
-              minlength="2"
-              maxlength="200"
-              required
-            />
-          </label>
-          <button class="modal__button">Save</button>
+          <input
+            type="text"
+            name="title"
+            class="modal__input"
+            id="profile__title__input"
+            placeholder="Jacques Cousteau"
+          />
+          <input
+            type="text"
+            name="description"
+            class="modal__input"
+            id="profile__description__input"
+            placeholder="Explorer"
+          />
+          <button
+            type="submit"
+            class="modal__save-button"
+            id="modal__save-button"
+          >
+            Save
+          </button>
         </form>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
-        <button class="card__trash-button" type="button"></button>
         <img src="" alt="" class="card__image" />
         <div class="card__description">
           <h2 class="card__title"></h2>
-          <button class="card__like-button" type="button"></button>
+          <button type="button" class="card__like-button"></button>
         </div>
       </li>
     </template>
