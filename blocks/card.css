@@ -10,7 +10,15 @@
   width: 282px;
   height: 282px;
   object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+.card__image:hover {
+  transform: scale(1.02);
+  opacity: 0.9;
+}
+
 
 .card__description {
   display: flex;
