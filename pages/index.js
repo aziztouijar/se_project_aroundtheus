@@ -131,29 +131,19 @@ initialCards.forEach((cardData) => {
 });
 
 
-
-function closeModal(modal) {
-  modal.classList.remove('modal_opened');
-}
-
-
-function openModal(modal) {
-  modal.classList.add('modal_opened');
-}
-
-
 document.querySelectorAll('.modal__close').forEach((button) => {
   button.addEventListener('click', (event) => {
     const modal = event.target.closest('.modal');
-    closeModal(modal);
+    closePopup(modal);
   });
 });
-
 
 document.querySelectorAll('.modal').forEach((modal) => {
   modal.addEventListener('click', (event) => {
     if (event.target === modal) {
-      closeModal(modal);
+      closePopup(modal);
     }
   });
 });
+
+
