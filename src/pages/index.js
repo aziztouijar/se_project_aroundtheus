@@ -75,17 +75,7 @@ function openPopup(popup) {
 }
 
 // Cards section
-const cardListSection = new Section(
-  {
-    items: initialCards,
 
-    renderer: (item) => {
-      const cardElement = createCard(item);
-      cardListSection.addItem(cardElement);
-    },
-  },
-  ".cards__list"
-);
 
 // Edit profile popup
 const profilePopup = new PopupWithForm(
