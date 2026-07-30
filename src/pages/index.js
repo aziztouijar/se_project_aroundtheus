@@ -11,7 +11,7 @@ import UserInfo from "../components/UserInfo.js";
 import {
   initialCards,
   validationConfig,
-} from "../utils/constants.js";
+} from "../utils/utils.js";
 
 // Elements
 const profileEditButton = document.querySelector(".profile__edit-button");
