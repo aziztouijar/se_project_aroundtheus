@@ -1,35 +1,46 @@
-Project 4: Around The U.S.
+Project 8: Around The U.S.
 
 GitHub Pages link: https://aziztouijar.github.io/se_project_aroundtheus/
+                   https://github.com/aziztouijar/se_project_aroundtheus
 
-Overview
+## Project Description
 
--   Intro
--   Figma
--   Images
+Around The U.S. is an interactive photo gallery website where users can:
 
-Intro
+- Edit their profile name and description
+- Add new photo cards
+- Like and delete cards
+- Open images in a larger preview popup
+- Validate form inputs before submission
+- Close popups using the close button, overlay, or Escape key
 
-This Project is used as an example to demonstrate various web development concepts, such as:
+The project was refactored using object-oriented programming and reusable JavaScript classes.
 
-1. Flexbox
-2. Grid
-3. The 'hover' and 'cursor:pointer' attributes
-4. Cards and Lists
-5. Responsive Design
+## Technologies and Techniques Used
 
-These 5 concepts aren't mutually exclusive to this particular Project, compared to previous Projects with TripleTen, but this one is a culmination of said previous projects. This has been a challenge!
+- HTML5
+- CSS3
+- JavaScript
+- Object-Oriented Programming
+- ES6 Modules
+- DOM manipulation
+- Form validation
+- BEM methodology
+- Responsive design
+- Webpack
+- Babel
+- PostCSS
+- Autoprefixer
+- CSSnano
 
-Figma
+## Project Classes
 
--   Here is a link to the project on Figma: (https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
+The project uses the following JavaScript classes:
 
-Images
-
-Using Figma is a breeze, and is beneficially simple to use. The Export function makes getting images so easy!
-(While it's easy to get the images you need, it's recommended to use an optimizer like https://tinypng.com/ to make sure the file size isn't too big)
-presentation video (link https://drive.google.com/file/d/11PIp72vLRdMPJuP6mvMZOgJMdYCgvVkI/view?usp=drive_link)
-
-
-this is video link for the website https://youtu.be/4i07In8N5hg
-Good luck and have fun!
+- `Card`
+- `FormValidator`
+- `Section`
+- `Popup`
+- `PopupWithImage`
+- `PopupWithForm`
+- `UserInfo`
